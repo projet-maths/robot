@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projet Robot - Monsieur Maupuy</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+}
+
+h2{
+    margin-top:40px;
+    color:#333;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 5px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+.schema{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.bloc{
+    border:2px solid black;
+    padding:15px;
+    width:180px;
+    background:#fafafa;
+    margin:10px;
+}
+
+.total{
+    margin-top:30px;
+    font-size:22px;
+    font-weight:bold;
+    color:green;
+}
+
+.devis-box {
+    border:1px solid black; 
+    padding:20px; 
+    margin-top:20px;
+    background-color: #fcfcfc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Projet Robot - Fiabilité Optimisée</h1>
+
+<p>
+Objectif : créer un robot avec une probabilité de fonctionnement
+supérieure ou égale à 0.993 tout en minimisant le prix.
+</p>
+
+<h2>Schéma du robot</h2>
+
+<div class="schema">
+
+<div class="bloc">
+<h3>Générateurs</h3>
+<p>4 composants</p>
+<p>P = 0.99949375</p>
+<p>Prix = 116 €</p>
+</div>
+
+<div class="bloc">
+<h3>Réducteurs</h3>
+<p>3 composants</p>
+<p>P = 0.999</p>
+<p>Prix = 54 €</p>
+</div>
+
+<div class="bloc">
+<h3>Cartes</h3>
+<p>2 composants</p>
+<p>P = 0.9986</p>
+<p>Prix = 182 €</p>
+</div>
+
+<div class="bloc">
+<h3>Moteurs</h3>
+<p>4 composants</p>
+<p>P = 0.996</p>
+<p>Prix = 581 €</p>
+</div>
+
+</div>
+
+<h2>Détails des composants</h2>
+
+<table>
+<tr>
+<th>Bloc</th>
+<th>Composants</th>
+<th>Fiabilité</th>
+<th>Prix</th>
+</tr>
+<tr>
+<td>Générateurs</td>
+<td>4 × 0.85</td>
+<td>0.99949375</td>
+<td>116 €</td>
+</tr>
+<tr>
+<td>Réducteurs</td>
+<td>3 × 0.9</td>
+<td>0.999</td>
+<td>54 €</td>
+</tr>
+<tr>
+<td>Cartes</td>
+<td>0.99 + 0.86</td>
+<td>0.9986</td>
+<td>182 €</td>
+</tr>
+<tr>
+<td>Moteurs</td>
+<td>3 × 0.8 + 1 × 0.5</td>
+<td>0.996</td>
+<td>581 €</td>
+</tr>
+</table>
+
+<h2>Calcul de la fiabilité</h2>
+
+<p>
+R total =
+0.99949375 × 0.999 × 0.9986 × 0.996
+</p>
+
+<p>
+R total = <b>0.993108</b>
+</p>
+
+<p>
+Donc la condition :
+<b>P ≥ 0.993</b> est respectée.
+</p>
+
+<h2>Devis professionnel</h2>
+
+<div class="devis-box">
+
+<h3>Entreprise RobotTech</h3>
+
+<p><b>Client :</b> Monsieur Maupuy</p>
+<p><b>Objet :</b> Construction d’un robot fiable avec redondance</p>
+
+<table>
+<tr>
+<th>Désignation</th>
+<th>Quantité</th>
+<th>Prix</th>
+</tr>
+<tr>
+<td>Générateurs</td>
+<td>4</td>
+<td>116 €</td>
+</tr>
+<tr>
+<td>Réducteurs</td>
+<td>3</td>
+<td>54 €</td>
+</tr>
+<tr>
+<td>Cartes électroniques</td>
+<td>2</td>
+<td>182 €</td>
+</tr>
+<tr>
+<td>Moteurs</td>
+<td>4</td>
+<td>581 €</td>
+</tr>
+<tr>
+<td>Total HT</td>
+<td>-</td>
+<td>933 €</td>
+</tr>
+<tr>
+<td>TVA 20%</td>
+<td>-</td>
+<td>186.60 €</td>
+</tr>
+<tr>
+<td><b>Total TTC</b></td>
+<td>-</td>
+<td><b>1119.60 €</b></td>
+</tr>
+</table>
+
+<div class="total">
+TOTAL TTC : 1119.60 €
+</div>
+
+<p style="margin-top:20px;">
+Fiabilité totale du système : <b>0.993108</b>
+</p>
+
+<p>
+Condition respectée : <b>P ≥ 0.993</b>
+</p>
+
+</div>
+
+<p style="margin-top:40px; text-align: center; font-style: italic;">
+Devis réalisé pour Monsieur Maupuy.
+</p>
+
+</div>
+
+</body>
+</html>
